@@ -57,27 +57,27 @@ include CMakeFiles/test.dir/progress.make
 # Include the compile flags for this target's objects.
 include CMakeFiles/test.dir/flags.make
 
-CMakeFiles/test.dir/test/test.c.o: CMakeFiles/test.dir/flags.make
-CMakeFiles/test.dir/test/test.c.o: ../test/test.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/c/Users/Xing/Desktop/doZip/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object CMakeFiles/test.dir/test/test.c.o"
-	/usr/bin/x86_64-linux-gnu-gcc-7 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/test.dir/test/test.c.o   -c /mnt/c/Users/Xing/Desktop/doZip/test/test.c
+CMakeFiles/test.dir/test/test1.c.o: CMakeFiles/test.dir/flags.make
+CMakeFiles/test.dir/test/test1.c.o: ../test/test1.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/c/Users/Xing/Desktop/doZip/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object CMakeFiles/test.dir/test/test1.c.o"
+	/usr/bin/x86_64-linux-gnu-gcc-7 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/test.dir/test/test1.c.o   -c /mnt/c/Users/Xing/Desktop/doZip/test/test1.c
 
-CMakeFiles/test.dir/test/test.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/test.dir/test/test.c.i"
-	/usr/bin/x86_64-linux-gnu-gcc-7 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /mnt/c/Users/Xing/Desktop/doZip/test/test.c > CMakeFiles/test.dir/test/test.c.i
+CMakeFiles/test.dir/test/test1.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/test.dir/test/test1.c.i"
+	/usr/bin/x86_64-linux-gnu-gcc-7 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /mnt/c/Users/Xing/Desktop/doZip/test/test1.c > CMakeFiles/test.dir/test/test1.c.i
 
-CMakeFiles/test.dir/test/test.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/test.dir/test/test.c.s"
-	/usr/bin/x86_64-linux-gnu-gcc-7 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /mnt/c/Users/Xing/Desktop/doZip/test/test.c -o CMakeFiles/test.dir/test/test.c.s
+CMakeFiles/test.dir/test/test1.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/test.dir/test/test1.c.s"
+	/usr/bin/x86_64-linux-gnu-gcc-7 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /mnt/c/Users/Xing/Desktop/doZip/test/test1.c -o CMakeFiles/test.dir/test/test1.c.s
 
 # Object files for target test
 test_OBJECTS = \
-"CMakeFiles/test.dir/test/test.c.o"
+"CMakeFiles/test.dir/test/test1.c.o"
 
 # External object files for target test
 test_EXTERNAL_OBJECTS =
 
-../bin/test: CMakeFiles/test.dir/test/test.c.o
+../bin/test: CMakeFiles/test.dir/test/test1.c.o
 ../bin/test: CMakeFiles/test.dir/build.make
 ../bin/test: libdoZip.a
 ../bin/test: CMakeFiles/test.dir/link.txt

@@ -163,32 +163,32 @@ src/miniz.c.s:
 	$(MAKE) -f CMakeFiles/doZip.dir/build.make CMakeFiles/doZip.dir/src/miniz.c.s
 .PHONY : src/miniz.c.s
 
-test/test.o: test/test.c.o
+test/test1.o: test/test1.c.o
 
-.PHONY : test/test.o
+.PHONY : test/test1.o
 
 # target to build an object file
-test/test.c.o:
-	$(MAKE) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/test/test.c.o
-.PHONY : test/test.c.o
+test/test1.c.o:
+	$(MAKE) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/test/test1.c.o
+.PHONY : test/test1.c.o
 
-test/test.i: test/test.c.i
+test/test1.i: test/test1.c.i
 
-.PHONY : test/test.i
+.PHONY : test/test1.i
 
 # target to preprocess a source file
-test/test.c.i:
-	$(MAKE) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/test/test.c.i
-.PHONY : test/test.c.i
+test/test1.c.i:
+	$(MAKE) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/test/test1.c.i
+.PHONY : test/test1.c.i
 
-test/test.s: test/test.c.s
+test/test1.s: test/test1.c.s
 
-.PHONY : test/test.s
+.PHONY : test/test1.s
 
 # target to generate assembly for a file
-test/test.c.s:
-	$(MAKE) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/test/test.c.s
-.PHONY : test/test.c.s
+test/test1.c.s:
+	$(MAKE) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/test/test1.c.s
+.PHONY : test/test1.c.s
 
 # Help Target
 help:
@@ -203,9 +203,9 @@ help:
 	@echo "... src/miniz.o"
 	@echo "... src/miniz.i"
 	@echo "... src/miniz.s"
-	@echo "... test/test.o"
-	@echo "... test/test.i"
-	@echo "... test/test.s"
+	@echo "... test/test1.o"
+	@echo "... test/test1.i"
+	@echo "... test/test1.s"
 .PHONY : help
 
 

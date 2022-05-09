@@ -26,11 +26,11 @@ int main(int argc, char *argv[])
   uint total_succeeded = 0;
   (void)argc, (void)argv;
 
-  printf("miniz.c version: %s\n", MZ_VERSION);
+  // printf("miniz.c version: %s\n", MZ_VERSION);
 
   do
   {
-    // Allocate buffers to hold compressed and uncompressed data.
+    // Allocate buffers to hold compressed and uncompressed data. 分配缓冲区来保存压缩和未压缩的数据。
     pCmp = (mz_uint8 *)malloc((size_t)cmp_len);
     pUncomp = (mz_uint8 *)malloc((size_t)src_len);
     if ((!pCmp) || (!pUncomp))
@@ -39,7 +39,7 @@ int main(int argc, char *argv[])
       return EXIT_FAILURE;
     }
 
-    // Compress the string.
+    // Compress the string. 对比字符串
     cmp_status = compress(pCmp, &cmp_len, (const unsigned char *)s_pStr, src_len);
     if (cmp_status != Z_OK)
     {
@@ -54,6 +54,7 @@ int main(int argc, char *argv[])
     if (step)
     {
       // Purposely corrupt the compressed data if fuzzy testing (this is a very crude fuzzy test).
+      // 如果模糊测试(这是一个非常粗糙的模糊测试)，故意破坏压缩数据。
       uint n = 1 + (rand() % 3);
       while (n--)
       {
@@ -62,7 +63,7 @@ int main(int argc, char *argv[])
       }
     }
 
-    // Decompress.
+    // Decompress. 解压
     cmp_status = uncompress(pUncomp, &uncomp_len, pCmp, cmp_len);
     total_succeeded += (cmp_status == Z_OK);
 

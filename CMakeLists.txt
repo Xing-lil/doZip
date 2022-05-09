@@ -20,7 +20,7 @@ aux_source_directory(src DIR_SRCS)
 add_library(doZip ${DIR_SRCS})
 target_link_libraries(doZip pthread)
 
-add_executable(test "${PROJECT_SOURCE_DIR}/test/test.c")
+add_executable(test "${PROJECT_SOURCE_DIR}/test/test1.c")
 target_link_libraries(test doZip)
 
 
