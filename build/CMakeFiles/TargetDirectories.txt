@@ -1,0 +1,4 @@
+/mnt/c/Users/Xing/Desktop/doZip/build/CMakeFiles/rebuild_cache.dir
+/mnt/c/Users/Xing/Desktop/doZip/build/CMakeFiles/edit_cache.dir
+/mnt/c/Users/Xing/Desktop/doZip/build/CMakeFiles/test.dir
+/mnt/c/Users/Xing/Desktop/doZip/build/CMakeFiles/doZip.dir

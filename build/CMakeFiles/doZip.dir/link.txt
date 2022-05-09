@@ -1,0 +1,2 @@
+/usr/bin/ar qc libdoZip.a  CMakeFiles/doZip.dir/src/miniz.c.o
+/usr/bin/ranlib libdoZip.a
